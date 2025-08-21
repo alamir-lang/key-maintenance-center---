@@ -16,6 +16,70 @@
     :root { --brand:#1e3a8a; }
     body { font-family: "Cairo", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
     .hero::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.45)}
+    @media (max-width: 1023px) {
+  header {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .heroImg {
+    width: 400px;
+  }
+  .name,
+  .title {
+    font-size: 2rem;
+  }
+  .arrow {
+    display: none;
+  }
+  .aboutMe {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+  .textContainer {
+    align-items: center;
+    margin: 0rem 5rem;
+    gap: 1rem;
+  }
+  .aboutName,
+  .aboutTitle {
+    font-size: 2rem;
+  }
+  .light {
+    width: 60px;
+  }
+  .aboutMeImg {
+    width: 400px;
+  }
+  .works {
+    padding: 0;
+  }
+  .worksContainer {
+    padding: 5rem 0rem;
+    gap: 3rem;
+  }
+  .projectTitle {
+    margin-left: 1rem;
+  }
+  .works ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .contactContainer {
+    margin: 10rem 5rem;
+    gap: 2rem;
+  }
+  .contact {
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 0;
+  }
+}
   </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
@@ -37,7 +101,7 @@
     </div>
   </header>  <!-- Hero -->  <section id="home" class="relative">
     <div class="hero relative isolate">
-      <img src="/st.jpeg" alt="عمال نظافة" class="w-full h-[72vh] object-cover">
+      <img src="/st.jpeg"  class="w-full h-[72vh] object-cover">
     </div>
     <div class="absolute inset-0 grid place-items-center">
       <div class="max-w-4xl mx-auto px-6 text-center text-white">
@@ -49,6 +113,7 @@
           <a href="#contact" class="inline-flex items-center gap-2 bg-[var(--brand)] text-white px-6 py-3 rounded-2xl font-bold shadow hover:opacity-90 transition">احجز زيارة</a>
         </div>
         <p class="mt-4 opacity-90 text-lg">اتصل بنا على <span class="font-extrabold">0501915238</span></p>
+        <h2> المكان : الرياض , حي اشبيليا , شارع النجاح امام مجم نبراس الطبي</h2>
       </div>
     </div>
   </section>  <!-- About -->  <section id="about" class="py-16">
